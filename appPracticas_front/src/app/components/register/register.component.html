@@ -1,0 +1,17 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card>
+        <mat-card-title>Registro</mat-card-title>
+        <mat-card-content>
+            <form fxLayoutAlign="strecth" fxLayout="column" (ngSubmit)="onSubmit()">
+                <mat-form-field>
+                    <input matInput name="name" placeholder="Nombre de usuarios" type="text" [(ngModel)]="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput name="password" placeholder="Contraseña" type="password" [(ngModel)]="password">
+                </mat-form-field>
+                <button mat-button type="submit">Regístrate</button>
+            </form>
+        </mat-card-content> 
+        <mat-card-footer>¿Ya estás registrado? <a href="/login">Inicia sesión</a></mat-card-footer>
+    </mat-card>    
+</div>

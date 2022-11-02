@@ -1,0 +1,17 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card>
+        <mat-card-title>Inicio de Sesión</mat-card-title>
+        <mat-card-content>
+            <form fxLayoutAlign="strecth" fxLayout="column" (ngSubmit)="onSubmit()">
+                <mat-form-field>
+                    <input matInput name="username" placeholder="Nombre de usuario" type="text" [(ngModel)]="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput name="password" placeholder="Contraseña" type="password" [(ngModel)]="password">
+                </mat-form-field>
+                <button mat-button type="submit">Iniciar Sesión</button>
+            </form>
+        </mat-card-content> 
+        <mat-card-footer>¿Aún no tienes cuenta? <a href="/register">Regístrate</a></mat-card-footer>
+    </mat-card>    
+</div>
